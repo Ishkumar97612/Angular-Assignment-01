@@ -1,0 +1,29 @@
+<div class="container m-5">
+  <h1>{{title}}</h1>
+  <div>
+    <button (click)="increment_counter()">Display Details</button>
+  </div>
+
+  <div>
+    <p *ngIf="count % 2 != 0">
+      Thank you for clicking on display button and it's content display on odd
+      click.
+    </p>
+    <p>'Display Details' button clicked {{ count }} times</p>
+  </div>
+
+  <div>
+    <input type="text" [(ngModel)]="displayVal" placeholder="Enter data" />
+    <button (click)="add_data()">Add</button>
+
+    <div>
+      <ng-container *ngFor="let val of array; let i = index">
+        <li [ngStyle]="{ 'background-color': (i + 1) % 5 == 0 ? 'blue' : '' }">
+          {{ val }}
+        </li>
+      </ng-container>
+    </div>
+
+  </div>
+</div>
+<router-outlet></router-outlet>

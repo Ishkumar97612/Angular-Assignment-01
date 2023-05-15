@@ -1,0 +1,21 @@
+button {
+    background-color: #9aed9e;
+    border: none;
+    color: white;
+    padding: 9px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .container{
+    padding-top: 0px;
+    padding-left: 18px;
+  }
+
+  div{
+    font-size: 20px;
+  }
